@@ -14,7 +14,9 @@ display.show(main_layout.view)
 
 _progress = main_layout.sub_view_by_id("main_progress").view
 
-while display.running:
+while True:
+    if display.check_quit():
+        break
     for current_progress in range(0, 101, 1):
         print("Progress: {}%".format(current_progress))
         _progress.progress = current_progress / 100  # convert to decimal

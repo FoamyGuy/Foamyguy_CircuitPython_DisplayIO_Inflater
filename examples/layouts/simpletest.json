@@ -2,7 +2,7 @@
   "view_type": "AbsoluteLayout",
   "sub_views": [
     {
-      "view_type": "Label",
+      "view_type": "BitmapLabel",
       "id":"main_lbl",
       "attributes":{
         "anchored_position": ["DISPLAY_WIDTH/2", "DISPLAY_HEIGHT/8"],

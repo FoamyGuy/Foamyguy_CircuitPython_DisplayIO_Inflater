@@ -10,5 +10,6 @@ main_layout = LinearLayout(display, layout_str)
 
 display.show(main_layout.view)
 
-while display.running:
-    pass
+while True:
+    if display.check_quit():
+        break

@@ -10,4 +10,5 @@ main_layout = AbsoluteLayout(board.DISPLAY, layout_str)
 board.DISPLAY.show(main_layout.view)
 
 while True:
-    pass
+    if display.check_quit():
+        break

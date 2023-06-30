@@ -73,7 +73,7 @@ class AbsoluteLayout:
                 from foamyguy_displayio_inflater.views.bitmap_label import LabelView
                 self._view_type_dict[view_type] = LabelView
 
-        layout_group = displayio.Group(max_size=len(self.layout_json_obj["sub_views"]))
+        layout_group = displayio.Group()
 
         for index, view in enumerate(self.layout_json_obj["sub_views"]):
             if "view_type" not in view:

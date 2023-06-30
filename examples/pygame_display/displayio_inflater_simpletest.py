@@ -15,5 +15,6 @@ display.show(main_layout.view)
 #main_layout.sub_view_by_index(0).label.text = "Changed Text\nBy Index"
 main_layout.sub_view_by_id("main_lbl").label.text = "Changed\nText By Id"
 
-while display.running:
-    pass
+while True:
+    if display.check_quit():
+        break

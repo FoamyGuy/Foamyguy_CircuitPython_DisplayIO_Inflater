@@ -46,11 +46,6 @@ class LabelView(View):
             if "line_spacing" in layout_json["attributes"]:
                 _line_spacing = layout_json["attributes"]["line_spacing"]
 
-
-            _max_glyphs = None
-            if "max_glyphs" in layout_json["attributes"]:
-                _max_glyphs = int(layout_json["attributes"]["max_glyphs"])
-
             _background_tight = False
             if "background_tight" in layout_json["attributes"]:
                 _background_tight = int(layout_json["attributes"]["background_tight"])
@@ -87,7 +82,6 @@ class LabelView(View):
 
             self.label = label.Label(
                 _font, text=_text, color=_color,
-                max_glyphs=_max_glyphs,
                 background_color=_background_color,
                 line_spacing=_line_spacing,
                 background_tight=_background_tight,

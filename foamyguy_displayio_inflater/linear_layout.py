@@ -74,7 +74,7 @@ class LinearLayout:
                 from foamyguy_displayio_inflater.views.bitmap_label import LabelView
                 self._view_type_dict[view_type] = LabelView
 
-        layout_group = displayio.Group(max_size=len(self.layout_json_obj["sub_views"]))
+        layout_group = displayio.Group()
 
         self._prev_view_end = 0
         for index, view in enumerate(self.layout_json_obj["sub_views"]):
